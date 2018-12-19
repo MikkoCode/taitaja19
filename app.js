@@ -8,7 +8,6 @@ var logger = require('morgan');
 var compression = require('compression');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 
 //Taitaja 2019 Website
 
@@ -25,7 +24,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
