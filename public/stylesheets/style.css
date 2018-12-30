@@ -8,6 +8,7 @@ a {
 
 .container {
   margin-top: 50px;
+  padding-bottom: 50px;
 }
 
 .navbar-logo{
@@ -43,4 +44,34 @@ a.btn-primary:hover{
 
 .btn{
   border-radius:0 !important;
+}
+
+.jumbotron {
+  background-image: url("/images/bg-min.jpg");
+  background-size: cover;
+}
+
+#front-hero{
+  text-align: center;
+}
+
+.shade:before{
+  background-color:rgba(255,0,0,0.3);
+}
+
+.longboye{
+  height: 500px;
+}
+
+li.nav-item.active{
+
+}
+
+#footer{
+  background-color: #f8f9fa!important;
+}
+
+.nomarginhr{
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,.1);
 }
