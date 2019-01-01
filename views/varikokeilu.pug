@@ -4,7 +4,11 @@ block content
     script(src='https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-full.min.js')
     script(type='text/paperscript', src='js/varikokeilu.js', canvas='myCanvas')
     .container
-        .col-sm-8.mx-auto.longboye
-            h1 Tervetuloa värikokeiluun!
-            canvas#myCanvas
-
+        .col-sm-8.mx-auto
+            h1.padding Tervetuloa värikokeiluun!
+            .card
+                .card-body
+                    | Ohje: Aloita valitsemalla jokin kolmesta huoneen osasta. Sen jälkeen valitse osalle haluamasi väri.
+                    | Voit poistaa valinnan painamalla osaa uudelleen, kun se on valittuna.
+            canvas#myCanvas(height=360,width=450)
+            button.btn.btn-light#resetoi(type='button') Poista värivalinnat

@@ -3,9 +3,10 @@ extends layout
 block content
     script(src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js")
     .container
-        h1 Ylläpito
+        h1.padding Ylläpito
         h2 Lämpötila:
         canvas#lampotila(width='400', height='200')
+        hr
         h2 Ilmankosteus:
         canvas#kosteus(width='400', height='200')
     script(src='js/kaaviot.js')
