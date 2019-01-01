@@ -1,6 +1,7 @@
 extends layout
 
 block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+  .container.padding
+    h1 404 - Ei löydy.
+    a(href="/")
+      button.btn.btn-primary(type='button') Etusivulle

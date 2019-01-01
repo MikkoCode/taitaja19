@@ -2,6 +2,7 @@
 var selected;
 var stroke = 1;
 var borderOpacity = 0.1;
+var borderColor = '#00d120';
 
 
 document.getElementById("resetoi").addEventListener("click", function(){
@@ -231,7 +232,7 @@ wall2.onClick = function(event) {
 
 
 function selectPiece(){
-    selected.strokeColor = 'red';
+    selected.strokeColor = borderColor;
 }
 
 function unselectAll(){
