@@ -219,6 +219,26 @@ wall2.add(new Point(300, 300));
 wall2.add(new Point(300, 75));
 wall2.closed = true;
 
+var ikkuna = new Path();
+ikkuna.fillColor = '#80cbff';
+ikkuna.strokeColor = new Color(0.7, 0.7, 0.7, 1);
+ikkuna.strokeWidth = 3;
+ikkuna.add(new Point(200, 125));
+ikkuna.add(new Point(200, 200));
+ikkuna.add(new Point(250, 218));
+ikkuna.add(new Point(250, 142));
+ikkuna.closed = true;
+
+ikkuna.onClick = function(event) {
+    unselectAll();
+    if (selected === wall2){
+        selected = null;
+        return;
+    }
+    selected = wall2;
+    selectPiece();
+};
+
 
 wall2.onClick = function(event) {
     unselectAll();
