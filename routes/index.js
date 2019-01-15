@@ -11,8 +11,8 @@ router.get('/varikokeilu' , function(req,res,next){
     }
 );
 
-router.get('/yllapito' , function(req,res,next){
-        res.render('ylläpito', { title: 'Ylläpito' });
+router.get('/iot' , function(req,res,next){
+        res.render('ylläpito', { title: 'IoT' });
     }
 );
 

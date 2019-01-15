@@ -1,9 +1,51 @@
 extends layout
 
 block content
-  .container.padding
-    .jumbotron.jumbotron-fluid
-      .container#front-hero
-        h1.display-4 Masan Maalaus & Tapetointi
-        p.lead
-          a.btn.btn-primary(href='/varikokeilu', role='button') Kokeile värejä
+    script(src='/js/koti.js')
+    .container.padding
+        .jumbotron.jumbotron-fluid
+            .container#front-hero
+                h1.display-4 Masan Maalaus & Tapetointi
+                p.fronthero-text Olemme Suomen edistyneimpiä maalausfirmoja. Käytämme urakoissamme uusinta teknologiaa, ja tulos on sen mukaista.
+                | Meillä säästät selvää aikaa ja rahaa.
+                p.lead
+                    a.btn.btn-primary.marginright(href='/varikokeilu', role='button') Kokeile värejä
+                    a.btn.btn-light(href='/yhteydenotto', role='button') Ota Yhteyttä
+        .container.padding
+            .row
+                .col-6
+                    i.fas.fa-network-wired.bigchungus
+                    h2 Edistyksellistä teknologiaa
+                    p Tarjotaksemme parasta mahdollista palvelua, käytämme antureita jotka pitävät huolen remontoitavan tilan kunnosta.
+                    | Ammattilaisemme seuraavat antureiden lähettämää tietoa, jotta tiedetään milloin kannattaa jatkaa urakkaa.
+                    p.sm-padding
+                        a(href='/iot') Näe, miten se toimii
+                .col-6
+                    img.max-width(src='/images/tech.jpg', alt='Girl in a jacket')
+        .container.padding.text-center
+            i.fas.fa-palette.bigchungus
+            h2 Näe, Koe, Ihastu
+            p Annamme mahdollisuuden testata värivalikoimaamme verkossa jotta saisit parhaan näkemyksen haluamastasi tilasta.
+            | Saat myös nähdä haluamasi maalit ja tapetit paikan päällä, jotta valintasi olisi paras mahdollisin.
+            p.lead.sm-padding
+                a.btn.btn-primary.marginright(href='/varikokeilu', role='button') Kokeile värejä
+        article
+            #owl
+                .column.row
+                    .large-12.columns.testimonial
+                        .quote
+                            p
+                                | Hoitivat urakan ajallaan ja homma toimii. Yhteydenpito helppoa ja jälki ammattimaista.
+                        .student
+                            .photo.round-image
+                            p Tero K.
+                            p Espoo
+                .row
+                    .large-12.columns.testimonial
+                        .quote
+                            p
+                                | Olen erittäin tyytyväinen lopputulokseen. Suosittelen lämpimästi.
+                        .student
+                            .photo
+                            p Sari A.
+                            p Helsinki

@@ -78,3 +78,87 @@ li.nav-item.active{
 .padding{
   padding:40px;
 }
+
+.sm-padding{
+  padding:20px;
+}
+
+.marginright{
+  margin-right: 15px;
+}
+
+.fronthero-text{
+  max-width: 50%;
+  margin-left: 25%;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.bigchungus{
+    font-size: 26px;
+}
+article {
+    margin: 20px auto;
+    width: 100%;
+    padding: 1em;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    color: #000000;
+}
+
+
+.quote {
+    background-color: rgba(44, 134, 116, 0.5);
+    padding: 15px 20px 5px 15px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.quote:after {
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 20px 18px 0 18px;
+    border-color: #2c8674 transparent transparent transparent;
+    position: relative;
+    top: 37px;
+    left: 20px;
+}
+
+.student {
+    margin-left: 25px;
+    margin-bottom: 80px;
+}
+
+.student .photo {
+    background-color: #2c8674;
+    border-radius: 100px;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 10px;
+}
+
+.student p {
+    position: relative;
+    top: 5px;
+    text-transform: uppercase;
+}
+
+.student p:nth-child(2) {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.student p:nth-child(3) {
+    font-size: 14px;
+    color: #777;
+}
+
+.max-width{
+    max-width: 100%;
+}
