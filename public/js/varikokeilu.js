@@ -285,6 +285,17 @@ tablefoot2.add(new Point(93, 315));
 tablefoot2.add(new Point(89, 318));
 tablefoot2.closed = true;
 
+
+tablefoot2.onClick = function(event) {
+    unselectAll();
+    if (selected === floor){
+        selected = null;
+        return;
+    }
+    selected = floor;
+    selectPiece();
+};
+
 var tablefoot3 = new Path();
 tablefoot3.fillColor = '#f9f9f9';
 tablefoot3.strokeColor = new Color(0, 0, 0, borderOpacity);
@@ -324,7 +335,7 @@ tablefoot4.add(new Point(115, 285));
 tablefoot4.closed = true;
 
 var table = new Path();
-table.fillColor = '#f9f9f9';
+table.fillColor = '#efefef';
 table.strokeColor = new Color(0, 0, 0, borderOpacity);
 table.strokeWidth = stroke;
 table.add(new Point(40, 255));
@@ -333,6 +344,17 @@ table.add(new Point(155, 245));
 table.add(new Point(115, 230));
 table.add(new Point(115, 230));
 table.closed = true;
+
+
+table.onClick = function(event) {
+    unselectAll();
+    if (selected === wall1){
+        selected = null;
+        return;
+    }
+    selected = wall1;
+    selectPiece();
+};
 
 
 

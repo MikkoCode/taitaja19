@@ -162,3 +162,14 @@ article {
 .max-width{
     max-width: 100%;
 }
+
+::selection {
+    background: #2c8674; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+    background: #2c8674; /* Gecko Browsers */
+}
+
+a.link{
+    color: #2c8674 !important;
+}
